@@ -19,3 +19,9 @@ View full UI:
 
 Benchmark:
 - go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem
+
+Profile the mem (num of objects):
+- go tool pprof -alloc_objects stats.test prof.mem
+
+Profile the mem (size of objects):
+- go tool pprof -alloc_space stats.test prof.mem
