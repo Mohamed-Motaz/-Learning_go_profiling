@@ -16,3 +16,6 @@ Create a pprof file without benchmarking:
 
 View full UI:
 - go tool pprof -http=":8000" {pprof_location}
+
+Benchmark:
+- go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem
