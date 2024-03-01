@@ -18,7 +18,7 @@ View full UI:
 - go tool pprof -http=":8000" {pprof_location}
 
 Benchmark:
-- go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem
+- go test -bench . -benchmem -cpuprofile prof.cpu -memprofile prof.mem -blockprofile prof.block
 
 Profile the mem (num of objects):
 - go tool pprof -alloc_objects stats.test prof.mem
